@@ -8,206 +8,215 @@
     <script src="js/fontawesome.js"></script>
     <title>ROWDY - Barbers</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/onepage-scroll.css">
     <link rel="stylesheet" href="css/app.css">
+
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-    <main>
-        <div class="">
-            <div class="container-fluid">
-                <nav id="navbar" class="navbar navbar-light bg-faded navbar-fixed-top">
-                    <div class="row" id="headfootbg">
-                        <div class="col-xs-6 text-xs-left">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="book">Termin Buchen</button>
-                        </div>
-                        <div class="col-xs-6 text-xs-right" id="social">
-                            <ul class="list-inline" id="sociallist">
-                                <li class="list-inline-item hidden-md-down">Visit us on:</li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/rowdybarbers" target="_blank">
-                                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.instagram.com/rowdy_barbershop/" target="_blank">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 bordernav"></div>
-                    </div>
-                </nav>
-                <div class="row">
-                    <div class="col-xs-12 text-xs-center">
-                        <img src="images/logo.png" alt="Rowdy Main Picture" class="centerimage" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 col-md-2 offset-md-2" id="contact">
-                        ROWDY Barbers
-                    </div>
-                    <div class="col-xs-4" id="contact">
-                        <div class="hidden-md-down">
-                            <div class="col-xs-6 text-xs-left">
-                                <i class="fa fa-road" aria-hidden="true"></i> Meinekestr. 6
+
+            <div class="container-fluid" id="nav">
+                 <nav id="navbar" class="navbar navbar-light navbar-fixed-top">
+        <div class="row" id="headfootbg">
+            <div class="col-xs-6 text-xs-left">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="book">Termin Buchen</button>
+            </div>
+            <div class="col-xs-6 text-xs-right" id="social">
+                <ul class="list-inline" id="sociallist">
+                    <li class="list-inline-item hidden-md-down">Visit us on:</li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/rowdybarbers" target="_blank">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/rowdy_barbershop/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 bordernav"></div>
+        </div>
+    </nav>
+            </div>
+<div class="main">
+                <section>
+                    <div class="container-fluid" id="firstpage">
+
+                        <div class="row">
+                            <div class="col-xs-12 text-xs-center">
+                                <img src="images/logo.png" alt="Rowdy Main Picture" class="centerimage" />
                             </div>
-                            <div class="col-xs-6 text-xs-right">
-                                <i class="fa fa-home" aria-hidden="true"></i> 10719 Berlin
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-md-2 offset-md-2" id="contact">
+                                ROWDY Barbers
                             </div>
-                            <br>
-                            <hr>
-                            <div class="col-xs-6 text-xs-left">
+                            <div class="col-xs-4" id="contact">
+                                <div class="hidden-md-down">
+                                    <div class="col-xs-6 text-xs-left">
+                                        <i class="fa fa-road" aria-hidden="true"></i> Meinekestr. 6
+                                    </div>
+                                    <div class="col-xs-6 text-xs-right">
+                                        <i class="fa fa-home" aria-hidden="true"></i> 10719 Berlin
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div class="col-xs-6 text-xs-left">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i> Mo - Sa
+                                    </div>
+                                    <div class="col-xs-6 text-xs-right">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i> 09 - 21 Uhr
+                                    </div>
+                                </div>
+                                <div class="hidden-md-up">
+                                    Meinekestr. 6 <br> 10719 Berlin
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-md-2" id="contact">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i> <a id="phone" href="tel:015233574930">0152 33574930</a>
+                            </div>
+                        </div>
+                        <div class="row hidden-md-up" id="time">
+                            <hr id="mobilehr"></hr>
+                            <div class="col-xs-5 offset-xs-1 text-xs-left">
                                 <i class="fa fa-calendar" aria-hidden="true"></i> Mo - Sa
                             </div>
-                            <div class="col-xs-6 text-xs-right">
-                                <i class="fa fa-clock-o" aria-hidden="true"></i> 09 - 21 Uhr
+                            <div class="col-xs-5 text-xs-right">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> 10 - 22 Uhr
                             </div>
                         </div>
-                        <div class="hidden-md-up">
-                            Meinekestr. 6 <br> 10719 Berlin
+                        <div class="row">
+                            <div class="col-xs-6 offset-xs-3">
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="closex">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title closex">ROWDY Barbers</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe src="https://widget.timify.com/588c4afa549da60da7adf9cc?lang=de" width="100%" height="350px"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-4 col-md-2" id="contact">
-                        <i class="fa fa-phone-square" aria-hidden="true"></i> <a id="phone" href="tel:015233574930">0152 33574930</a>
-                    </div>
-                </div>
-                <div class="row hidden-md-up" id="time">
-                    <hr id="mobilehr"></hr>
-                    <div class="col-xs-5 offset-xs-1 text-xs-left">
-                        <i class="fa fa-calendar" aria-hidden="true"></i> Mo - Sa
-                    </div>
-                    <div class="col-xs-5 text-xs-right">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i> 10 - 22 Uhr
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 offset-xs-3">
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="Impressum" aria-hidden="true">
                             <div class="modal-dialog" role="document">
-                                <div class="modal-content">
+                                <div class="modal-content impressum">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="closex">&times;</span>
-                            </button>
-                                        <h4 class="modal-title closex">ROWDY Barbers</h4>
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="Impressum">Impressum</h4>
                                     </div>
                                     <div class="modal-body">
-                                        <iframe src="https://widget.timify.com/588c4afa549da60da7adf9cc?lang=de" width="100%" height="350px"></iframe>
+                                        <span style="font-size: small;">GerTraC GmbH&nbsp;</span><br><span style="font-size: small;">Wöhlertstr. 12-13</span><br><span style="font-size: small;">10115 Berlin</span></h3>
+                                        <span style="font-size: small;">Tel:&nbsp;<a href="tel:%2B4930%2064437899" target="_blank">+4930 64437899</a></span><br><span style="font-size: small;">Fax:&nbsp;<a href="tel:%2B4930%2064437898" target="_blank">+4930 64437898</a></span><br>
+                                        <span style="font-size: small;">E-Mail:&nbsp;<a href="mailto:pk@gertrac.de" target="_blank">pk@gertrac.de</a></span><br>
+                                        <span style="font-size: small;">Geschäftsführer: </span><span style="font-size: small;">Alexander Petrovichev</span><br>
+                                        <span style="font-size: small;">Registergericht: Amtsgericht Charlottenburg, HRB 165621</span><br>
+                                        <span style="font-size: small;">Umsatzsteuer-IdNr.: DE299413660</span><br><br>
+
+                                        <span style="font-size: small;">Datenschutz</span><br>
+                                        <span style="font-size: small;">Die Nutzung unserer Webseite ist in der Regel ohne eine Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adresse) erhoben werden, erfolgt dies – soweit es möglich ist– immer auf freiwilliger Basis. Wir geben Ihre Daten ohne Ihre ausdrückliche Zustimmung nicht an Dritte weiter. Außerdem weisen wir Sie darauf hin, dass die Datenübertragung im Internet (wie beispielsweise bei der Kommunikation über E-Mail) Sicherheitslücken aufweisen kann. Denn ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Wir widersprechen hiermit ausdrücklich der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien. Die Betreiber dieser Seiten behalten sich ausdrücklich vor, im Fall der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, rechtliche Schritte einzuleiten.</span><br><br>
+                                        <span style="font-size: small;">Haftung für Inhalte</span><br>
+                                        <span style="font-size: small;">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</span><br>
+                                        <p class="normal"> Jeder Mann – jeder Wunsch – ein Ort: "Rowdy"</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal -->
-                    </div>
-                </div>
-                <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="Impressum" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content impressum">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                                <h4 class="modal-title" id="Impressum">Impressum</h4>
-                            </div>
-                            <div class="modal-body">
-                                <span style="font-size: small;">GerTraC GmbH&nbsp;</span><br><span style="font-size: small;">Wöhlertstr. 12-13</span><br><span style="font-size: small;">10115 Berlin</span></h3>
-                                <span style="font-size: small;">Tel:&nbsp;<a href="tel:%2B4930%2064437899" target="_blank">+4930 64437899</a></span><br><span style="font-size: small;">Fax:&nbsp;<a href="tel:%2B4930%2064437898" target="_blank">+4930 64437898</a></span><br>
-                                <span style="font-size: small;">E-Mail:&nbsp;<a href="mailto:pk@gertrac.de" target="_blank">pk@gertrac.de</a></span><br>
-                                <span style="font-size: small;">Geschäftsführer: </span><span style="font-size: small;">Alexander Petrovichev</span><br>
-                                <span style="font-size: small;">Registergericht: Amtsgericht Charlottenburg, HRB 165621</span><br>
-                                <span style="font-size: small;">Umsatzsteuer-IdNr.: DE299413660</span><br><br>
 
-                                <span style="font-size: small;">Datenschutz</span><br>
-                                <span style="font-size: small;">Die Nutzung unserer Webseite ist in der Regel ohne eine Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adresse) erhoben werden, erfolgt dies – soweit es möglich ist– immer auf freiwilliger Basis. Wir geben Ihre Daten ohne Ihre ausdrückliche Zustimmung nicht an Dritte weiter. Außerdem weisen wir Sie darauf hin, dass die Datenübertragung im Internet (wie beispielsweise bei der Kommunikation über E-Mail) Sicherheitslücken aufweisen kann. Denn ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Wir widersprechen hiermit ausdrücklich der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien. Die Betreiber dieser Seiten behalten sich ausdrücklich vor, im Fall der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, rechtliche Schritte einzuleiten.</span><br><br>
-                                <span style="font-size: small;">Haftung für Inhalte</span><br>
-                                <span style="font-size: small;">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</span><br>
-                                <p class="normal"> Jeder Mann – jeder Wunsch – ein Ort: "Rowdy"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal mod-large fade" id="shop" tabindex="-1" role="dialog" aria-labelledby="shop" aria-hidden="true">
-                    <div class="modal-dialog" id="shopmodal" role="document">
-                        <div class="modal-content shop">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                                <h3 class="modal-title text-xs-center" id="shop">Shop</h3>
-                            </div>
-                            <div class="modal-body">
-                                <div class="card-deck-wrapper">
-                                    <div class="card-deck">
-                                        <div class="card">
-                                            <h3 class="card-header">Modellierpaste - Kontur</h3>
-                                            <img class="card-img-top img-fluid" src="images/kontur.png" alt="Modellierpaste - Kontur">
-                                            <div class="card-block">
-                                                <p class="card-text">Betonung von Konturen in "Scheitelfrisuren". In Langen Haaren gut als glanz- und formgebendes Element einzusetzen. Speziell fuer elegante, glatte Modellierungen. Wiederverformbar. Glanzgebend.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DWA4A/ref=cm_sw_em_r_mt_dp_hGhjybA7W5HY8" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <h3 class="card-header">Shampoo</h3>
-                                            <img class="card-img-top img-fluid" src="images/shampoo.png" alt="Card image cap">
-                                            <div class="card-block">
-                                                <p class="card-text">Waescht sanft das ueberfluessige oel von Kopfhaut und Haar ab. Durch Weizenproteine gibt dem Haar Staerke.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DW9J6/ref=cm_sw_em_r_mt_dp_-ThjybGHD1DGX" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <h3 class="card-header">Haarcreme - Matt</h3>
-                                            <img class="card-img-top img-fluid" src="images/matt.png" alt="Card image cap">
-                                            <div class="card-block">
-                                                <p class="card-text">Fuer den "Under-Cut" oder "Out of Bed" - Look. Mattierende Verformung, re-modellierbar. Fuer den laessigen ungeplanten stylischen Look.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DW90K/ref=cm_sw_em_r_mt_dp_.ThjybJN5JJXP" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
-                                            </div>
-                                        </div>
+                        <div class="modal mod-large fade" id="shop" tabindex="-1" role="dialog" aria-labelledby="shop" aria-hidden="true">
+                            <div class="modal-dialog" id="shopmodal" role="document">
+                                <div class="modal-content shop">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h3 class="modal-title text-xs-center" id="shop">Shop</h3>
                                     </div>
-                                    <div class="card-deck">
-                                        <div class="card">
-                                            <h3 class="card-header">Orangen Bartoel</h3>
-                                            <img class="card-img-top img-fluid" src="images/orange.png" alt="Modellierpaste - Kontur">
-                                            <div class="card-block">
-                                                <p class="card-text">Fuer einen langen, dicken Bart, um diesen zu baendigen, zu glaetten und zu saenftigen und vorallem zu schuetzen. Das naturreine oel mit einem feinem Zusatz an Orange hinterlaesst ein angenehm frisches Empfinden.</p>
+                                    <div class="modal-body">
+                                        <div class="card-deck-wrapper">
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <h3 class="card-header">Modellierpaste - Kontur</h3>
+                                                    <img class="card-img-top img-fluid" src="images/kontur.png" alt="Modellierpaste - Kontur">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Betonung von Konturen in "Scheitelfrisuren". In Langen Haaren gut als glanz- und formgebendes Element einzusetzen. Speziell fuer elegante, glatte Modellierungen. Wiederverformbar. Glanzgebend.</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DWA4A/ref=cm_sw_em_r_mt_dp_hGhjybA7W5HY8" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <h3 class="card-header">Shampoo</h3>
+                                                    <img class="card-img-top img-fluid" src="images/shampoo.png" alt="Card image cap">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Waescht sanft das ueberfluessige oel von Kopfhaut und Haar ab. Durch Weizenproteine gibt dem Haar Staerke.</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DW9J6/ref=cm_sw_em_r_mt_dp_-ThjybGHD1DGX" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <h3 class="card-header">Haarcreme - Matt</h3>
+                                                    <img class="card-img-top img-fluid" src="images/matt.png" alt="Card image cap">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Fuer den "Under-Cut" oder "Out of Bed" - Look. Mattierende Verformung, re-modellierbar. Fuer den laessigen ungeplanten stylischen Look.</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DW90K/ref=cm_sw_em_r_mt_dp_.ThjybJN5JJXP" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DWA9U/ref=cm_sw_em_r_mt_dp_IyBkyb1E8SH9M" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <h3 class="card-header">Haarwasser - Tonic</h3>
-                                            <img class="card-img-top img-fluid" src="images/tonic.png" alt="Card image cap">
-                                            <div class="card-block">
-                                                <p class="card-text">Erfrischen Sie muede Kopfhaut mit einem vitalisierenden, herb erfrischenden Haar-Tonic. Fuer einen optimalen Start in den Tag, angereichert mit Menthol, Coffein und Rosskastanien - Auszuegen. </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DWAUO/ref=cm_sw_em_r_mt_dp_JyBkybGRYHYEG" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <h3 class="card-header">Sandelholz Bartoel</h3>
-                                            <img class="card-img-top img-fluid" src="images/sandelholz.png" alt="Card image cap">
-                                            <div class="card-block">
-                                                <p class="card-text">Fuer einen langen, dicken Bart, um diesen zu baendigen, zu glaetten und zu saenftigen und vorallem zu schuetzen. Das naturreine oel mit einem feinen Zusatz an Sandelholz hinterlaesst ein angenehm frisches
-                                                    Empfinden.
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="https://www.amazon.de/dp/B01L9DW90K/ref=cm_sw_em_r_mt_dp_.ThjybJN5JJXP" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                            <div class="card-deck">
+                                                <div class="card">
+                                                    <h3 class="card-header">Orangen Bartoel</h3>
+                                                    <img class="card-img-top img-fluid" src="images/orange.png" alt="Modellierpaste - Kontur">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Fuer einen langen, dicken Bart, um diesen zu baendigen, zu glaetten und zu saenftigen und vorallem zu schuetzen. Das naturreine oel mit einem feinem Zusatz an Orange hinterlaesst ein angenehm frisches Empfinden.</p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DWA9U/ref=cm_sw_em_r_mt_dp_IyBkyb1E8SH9M" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <h3 class="card-header">Haarwasser - Tonic</h3>
+                                                    <img class="card-img-top img-fluid" src="images/tonic.png" alt="Card image cap">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Erfrischen Sie muede Kopfhaut mit einem vitalisierenden, herb erfrischenden Haar-Tonic. Fuer einen optimalen Start in den Tag, angereichert mit Menthol, Coffein und Rosskastanien - Auszuegen. </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DWAUO/ref=cm_sw_em_r_mt_dp_JyBkybGRYHYEG" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <h3 class="card-header">Sandelholz Bartoel</h3>
+                                                    <img class="card-img-top img-fluid" src="images/sandelholz.png" alt="Card image cap">
+                                                    <div class="card-block">
+                                                        <p class="card-text">Fuer einen langen, dicken Bart, um diesen zu baendigen, zu glaetten und zu saenftigen und vorallem zu schuetzen. Das naturreine oel mit einem feinen Zusatz an Sandelholz hinterlaesst ein angenehm frisches
+                                                            Empfinden.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <a href="https://www.amazon.de/dp/B01L9DW90K/ref=cm_sw_em_r_mt_dp_.ThjybJN5JJXP" class="btn btn-primary btn-block buy" target="_blank">Kaufen</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -215,8 +224,60 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+                <section>
+                    <div class="container-fluid" id="secondpage">
+                        <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="row" id="Preisliste">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h1 class="text-xs-center" id="headlinepricings">Service</h1>
+                                    <div class="row">
+                                        <div class="offset-md-2 offset-lg-2 offset-sm-2  col-xs-9 col-sm-4 col-md-4 col-lg-4">
+                                            <h2>Hair - Service</h2>
+                                            <p>Beratung | Waesche | Schnitt | Style</p>
+
+                                        </div>
+                                        <div class="hidden-sm-down col-sm-4 col-md-4 col-lg-4 text-xs-right">
+                                            <h1>27 €</h1>
+                                        </div>
+                                        <div class="col-xs-3 hidden-sm-up text-xs-right">
+                                            <h2>27 €</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="offset-md-2 offset-lg-2 offset-sm-2 col-xs-9 col-sm-4 col-md-4 col-lg-4">
+                                            <h2>Beard - Service</h2>
+                                            <p>Beratung | Schnitt | Rasur | Pflege | Form</p>
+                                        </div>
+                                        <div class="hidden-sm-down col-sm-4 col-md-4 col-lg-4 text-xs-right">
+                                            <h1>27 €</h1>
+                                        </div>
+                                        <div class="col-xs-3 hidden-sm-up text-xs-right">
+                                            <h2>27 €</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-md-2 offset-lg-2 offset-sm-2 col-xs-9 col-sm-4 col-md-4 col-lg-4">
+                                            <h2>Package</h2>
+                                            <p>Hair | Beard</p>
+                                        </div>
+                                        <div class="hidden-sm-down col-sm-4 col-md-4 col-lg-4 text-xs-right">
+                                            <h1>51 €</h1>
+                                        </div>
+                                        <div class="col-xs-3 hidden-sm-up text-xs-right">
+                                            <h2>51 €</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                </section>
+</div>
             <footer class="footer">
                 <div class="row">
                     <div class="col-xs-12 bordernav"></div>
@@ -231,15 +292,16 @@
                     </div>
                 </div>
             </footer>
-        </div>
-    </main>
-    <div class="cd-cover-layer"></div>
-    <div class="cd-loading-bar"></div>
+
+
+
     <script src="js/tether.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/widget.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>

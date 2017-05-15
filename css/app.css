@@ -12,15 +12,15 @@ hr {
     border: 0;
     border-top: 1px solid #f5f5f5;
 }
-
+#headlinepricings{
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    padding-bottom: 1px;
+    margin-bottom: 1.5em;
+}
 body {
-    padding-top: 65px;
-    position: relative;
-    color: rgb(0, 0, 0);
-    height: 100%;
-    background: url("../images/black-Linen.png");
     font-family: 'mainfont';
-    background-attachment: fixed;
     padding-bottom: 3.5em;
 }
 
@@ -31,6 +31,7 @@ body {
 
 .navbar {
     padding-top: 0;
+    background: url("../images/black-Linen.png");
 }
 
 #book {
@@ -63,8 +64,6 @@ body {
 .bordernav {
     z-index: 1030;
     background-image: url(../images/lin-top.png);
-    width: 100vw;
-    height: 7px;
     background-repeat: repeat-x;
     background-position: bottom;
     padding-top: 0;
@@ -147,6 +146,7 @@ body {
     width: 100%;
     z-index: 101;
     font-size: 1.2em;
+    background: url("../images/black-Linen.png");
 }
 
 .card {
@@ -203,6 +203,17 @@ body {
   border-color: rgb(34, 181, 53);*/
     opacity: 0.85;
     color: rgb(34, 181, 53);
+}
+#Preisliste {
+    padding-top: 2vh;
+    color: #ffffff;
+
+}
+#firstpage{
+    background: url("../images/black-Linen.png");
+}
+#secondpage{
+    background: #8b211e;
 }
 
 .card-footer {
