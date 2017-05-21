@@ -1,16 +1,16 @@
 const navbarheight = $(".navbar").height();
 const footerheight = $(".footer").height();
-const pageheight = $(window).height()-navbarheight-footerheight;
-const firstpage = $("#firstpage");
-const secondpage = $("#secondpage");
- $(document).ready(function() {
-     firstpage.css("height", pageheight + "px");
-     firstpage.css("padding-bottom", footerheight/2 +"px");
-     firstpage.css("padding-top", navbarheight/2 +"px");
-     secondpage.css("min-height", pageheight + "px");
-     secondpage.css("padding-top", footerheight/2 + "px");
-     $("body").css("padding-top", navbarheight + "px");
- });
+const pageheight = $(window).height() - navbarheight - footerheight;
+const _firstpage = $("#firstpage");
+const _secondpage = $("#secondpage");
+$(document).ready(function () {
+    _firstpage.css("height", pageheight + "px");
+    _firstpage.css("padding-bottom", footerheight / 2 + "px");
+    _firstpage.css("padding-top", navbarheight / 2 + "px");
+    _secondpage.css("min-height", pageheight + "px");
+    _secondpage.css("padding-top", footerheight / 2 + "px");
+    $("body").css("padding-top", navbarheight + "px");
+});
 $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
     easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -18,8 +18,10 @@ $(".main").onepage_scroll({
     animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
     pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
     updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-    beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-    afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+    beforeMove: function (index) {
+    },  // This option accepts a callback function. The function will be called before the page moves.
+    afterMove: function (index) {
+    },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
     responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
