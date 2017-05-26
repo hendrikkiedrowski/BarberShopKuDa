@@ -4,6 +4,7 @@ let pageheight = $(window).height() - navbarheight - footerheight;
 let _firstpage = $("#firstpage");
 let _secondpage = $("#secondpage");
 let _preisliste = $("#Preisliste");
+let _animobjekts = $(".anim");
 let _positionPreisliste = _preisliste.offset();
 $(document).ready(function () {
     _firstpage.css("height", pageheight + "px");
@@ -12,6 +13,11 @@ $(document).ready(function () {
     _secondpage.css("min-height", pageheight + "px");
     _secondpage.css("padding-top", footerheight / 2 + "px");
     $("body").css("padding-top", navbarheight + "px");
+    _animobjekts.each(function (index) {
+        $(this).css("display", "none")
+    });
+
+
 
 
 });
@@ -25,6 +31,16 @@ $(".main").onepage_scroll({
     beforeMove: function (index) {
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) {
+        if (_secondpage.hasClass("active") == true) {
+            _animobjekts.each(function (i ,el ) {
+                var el = $(this);
+                setTimeout(function () {
+                    el.css("display", "block");
+                    el.addClass("animated fadeInRight");
+                }, 800*i);
+
+            })
+        }
     },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
@@ -32,4 +48,12 @@ $(".main").onepage_scroll({
     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+});
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
 });
