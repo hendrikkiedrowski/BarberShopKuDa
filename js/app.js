@@ -1,8 +1,10 @@
-const navbarheight = $(".navbar").height();
-const footerheight = $(".footer").height();
-const pageheight = $(window).height() - navbarheight - footerheight;
-const _firstpage = $("#firstpage");
-const _secondpage = $("#secondpage");
+let navbarheight = $(".navbar").height();
+let footerheight = $(".footer").height();
+let pageheight = $(window).height() - navbarheight - footerheight;
+let _firstpage = $("#firstpage");
+let _secondpage = $("#secondpage");
+let _preisliste = $("#Preisliste");
+let _positionPreisliste = _preisliste.offset();
 $(document).ready(function () {
     _firstpage.css("height", pageheight + "px");
     _firstpage.css("padding-bottom", footerheight / 2 + "px");
@@ -10,6 +12,8 @@ $(document).ready(function () {
     _secondpage.css("min-height", pageheight + "px");
     _secondpage.css("padding-top", footerheight / 2 + "px");
     $("body").css("padding-top", navbarheight + "px");
+
+
 });
 $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
