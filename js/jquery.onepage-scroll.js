@@ -83,7 +83,7 @@
     $.fn.onepage_scroll = function (options) {
         var settings = $.extend({}, defaults, options),
             el = $(this),
-            sections = $(settings.sectionContainer)
+            sections = $(settings.sectionContainer);
         total = sections.length,
             status = "off",
             topPos = $(".navbar").height() + "px",
@@ -120,10 +120,10 @@
             $(this).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
                 if (typeof settings.afterMove == 'function') settings.afterMove(index);
             });
-        }
+        };
 
         $.fn.moveDown = function () {
-            var el = $(this)
+            var el = $(this);
             index = $(settings.sectionContainer + ".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
             next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
@@ -139,7 +139,7 @@
                 pos = (index * 100) * -1;
             }
             if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-            current.removeClass("active")
+            current.removeClass("active");
             next.addClass("active");
             if (settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
@@ -147,17 +147,17 @@
             }
 
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
-            $("body").addClass("viewing-page-" + next.data("index"))
+            $("body").addClass("viewing-page-" + next.data("index"));
 
             if (history.replaceState && settings.updateURL == true) {
                 var href = window.location.href.substr(0, window.location.href.indexOf('#')) + "#" + (index + 1);
                 history.pushState({}, document.title, href);
             }
             el.transformPage(settings, pos, next.data("index"));
-        }
+        };
 
         $.fn.moveUp = function () {
-            var el = $(this)
+            var el = $(this);
             index = $(settings.sectionContainer + ".active").data("index");
             current = $(settings.sectionContainer + "[data-index='" + index + "']");
             next = $(settings.sectionContainer + "[data-index='" + (index - 1) + "']");
@@ -174,33 +174,33 @@
                 pos = ((next.data("index") - 1) * 100) * -1;
             }
             if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-            current.removeClass("active")
-            next.addClass("active")
+            current.removeClass("active");
+            next.addClass("active");
             if (settings.pagination == true) {
                 $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
             }
             $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
-            $("body").addClass("viewing-page-" + next.data("index"))
+            $("body").addClass("viewing-page-" + next.data("index"));
 
             if (history.replaceState && settings.updateURL == true) {
                 var href = window.location.href.substr(0, window.location.href.indexOf('#')) + "#" + (index - 1);
                 history.pushState({}, document.title, href);
             }
             el.transformPage(settings, pos, next.data("index"));
-        }
+        };
 
         $.fn.moveTo = function (page_index) {
-            current = $(settings.sectionContainer + ".active")
+            current = $(settings.sectionContainer + ".active");
             next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
             if (next.length > 0) {
                 if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
-                current.removeClass("active")
-                next.addClass("active")
+                current.removeClass("active");
+                next.addClass("active");
                 $(".onepage-pagination li a" + ".active").removeClass("active");
                 $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
                 $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
-                $("body").addClass("viewing-page-" + next.data("index"))
+                $("body").addClass("viewing-page-" + next.data("index"));
 
                 pos = ((page_index - 1) * 100) * -1;
 
@@ -210,12 +210,12 @@
                 }
                 el.transformPage(settings, pos, page_index);
             }
-        }
+        };
 
         function responsive() {
             //start modification
             var valForTest = false;
-            var typeOfRF = typeof settings.responsiveFallback
+            var typeOfRF = typeof settings.responsiveFallback;
 
             if (typeOfRF == "number") {
                 valForTest = $(window).width() < settings.responsiveFallback;
@@ -332,19 +332,19 @@
         }
 
         if (window.location.hash != "" && window.location.hash != "#1") {
-            init_index = window.location.hash.replace("#", "")
+            init_index = window.location.hash.replace("#", "");
 
             if (parseInt(init_index) <= total && parseInt(init_index) > 0) {
-                $(settings.sectionContainer + "[data-index='" + init_index + "']").addClass("active")
-                $("body").addClass("viewing-page-" + init_index)
+                $(settings.sectionContainer + "[data-index='" + init_index + "']").addClass("active");
+                $("body").addClass("viewing-page-" + init_index);
                 if (settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + init_index + "']").addClass("active");
 
                 next = $(settings.sectionContainer + "[data-index='" + (init_index) + "']");
                 if (next) {
-                    next.addClass("active")
+                    next.addClass("active");
                     if (settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + (init_index) + "']").addClass("active");
                     $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
-                    $("body").addClass("viewing-page-" + next.data("index"))
+                    $("body").addClass("viewing-page-" + next.data("index"));
                     if (history.replaceState && settings.updateURL == true) {
                         var href = window.location.href.substr(0, window.location.href.indexOf('#')) + "#" + (init_index);
                         history.pushState({}, document.title, href);
@@ -353,13 +353,13 @@
                 pos = ((init_index - 1) * 100) * -1;
                 el.transformPage(settings, pos, init_index);
             } else {
-                $(settings.sectionContainer + "[data-index='1']").addClass("active")
-                $("body").addClass("viewing-page-1")
+                $(settings.sectionContainer + "[data-index='1']").addClass("active");
+                $("body").addClass("viewing-page-1");
                 if (settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active");
             }
         } else {
-            $(settings.sectionContainer + "[data-index='1']").addClass("active")
-            $("body").addClass("viewing-page-1")
+            $(settings.sectionContainer + "[data-index='1']").addClass("active");
+            $("body").addClass("viewing-page-1");
             if (settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active");
         }
 
@@ -393,19 +393,19 @@
                 if (!$("body").hasClass("disabled-onepage-scroll")) {
                     switch (e.which) {
                         case 38:
-                            if (tag != 'input' && tag != 'textarea') el.moveUp()
+                            if (tag != 'input' && tag != 'textarea') el.moveUp();
                             break;
                         case 40:
-                            if (tag != 'input' && tag != 'textarea') el.moveDown()
+                            if (tag != 'input' && tag != 'textarea') el.moveDown();
                             break;
                         case 32: //spacebar
-                            if (tag != 'input' && tag != 'textarea') el.moveDown()
+                            if (tag != 'input' && tag != 'textarea') el.moveDown();
                             break;
                         case 33: //pageg up
-                            if (tag != 'input' && tag != 'textarea') el.moveUp()
+                            if (tag != 'input' && tag != 'textarea') el.moveUp();
                             break;
                         case 34: //page dwn
-                            if (tag != 'input' && tag != 'textarea') el.moveDown()
+                            if (tag != 'input' && tag != 'textarea') el.moveDown();
                             break;
                         case 36: //home
                             el.moveTo(1);

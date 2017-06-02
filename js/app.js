@@ -1,25 +1,22 @@
 let navbarheight = $(".navbar").height();
 let footerheight = $(".footer").height();
-let pageheight = $(window).height() - navbarheight - footerheight;
+let _mobilecontact = $("#mobilecontact");
+let _contacts = $("#contacts");
 let _firstpage = $("#firstpage");
 let _secondpage = $("#secondpage");
-let _preisliste = $("#Preisliste");
 let _animobjekts = $(".anim");
-let _positionPreisliste = _preisliste.offset();
+let _content = $(".content");
 $(document).ready(function () {
-    _firstpage.css("height", pageheight + "px");
-    _firstpage.css("padding-bottom", footerheight / 2 + "px");
-    _firstpage.css("padding-top", navbarheight / 2 + "px");
-    _secondpage.css("min-height", pageheight + "px");
-    _secondpage.css("padding-top", footerheight / 2 + "px");
-    $("body").css("padding-top", navbarheight + "px");
+    _content.css("padding-top", navbarheight + 50 + "px");
+    contact();
     _animobjekts.each(function (index) {
         $(this).css("display", "none")
     });
 
 
-
-
+});
+$(window).resize(function () {
+    contact();
 });
 $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -32,12 +29,12 @@ $(".main").onepage_scroll({
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) {
         if (_secondpage.hasClass("active") == true) {
-            _animobjekts.each(function (i ,el ) {
+            _animobjekts.each(function (i, el) {
                 var el = $(this);
                 setTimeout(function () {
                     el.css("display", "block");
                     el.addClass("animated fadeInRight");
-                }, 800*i);
+                }, 800 * i);
 
             })
         }
@@ -52,8 +49,12 @@ $(".main").onepage_scroll({
 $.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
+        this.addClass('animated ' + animationName).one(animationEnd, function () {
             $(this).removeClass('animated ' + animationName);
         });
     }
 });
+function contact() {
+    _contacts.css("bottom", (footerheight + _contacts.height()) * -1 + "px");
+    _mobilecontact.css("bottom", (footerheight + _mobilecontact.height()) * -1 + "px");
+}
