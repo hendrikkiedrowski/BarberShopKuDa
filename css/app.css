@@ -113,12 +113,16 @@ a {
 
 #mobilecontact {
 	color: white;
-	position: relative;
+	position: absolute;
+	width: 100%;
+	padding-bottom: 1vh;
 	text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 #contacts {
-	position: relative;
+	padding-bottom: 1vh;
+	position: absolute;
+	width: 100%;
 }
 #mobilehr {
 	margin-left: 2.5rem;

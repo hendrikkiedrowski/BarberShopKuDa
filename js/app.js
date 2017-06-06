@@ -55,6 +55,7 @@ $.fn.extend({
     }
 });
 function contact() {
-    _contacts.css("bottom", (footerheight + _contacts.height()) * -1 + "px");
-    _mobilecontact.css("bottom", (footerheight + _mobilecontact.height()) * -1 + "px");
+    _contacts.css("bottom", footerheight + "px");
+    _mobilecontact.css("bottom", footerheight + "px");
+
 }
