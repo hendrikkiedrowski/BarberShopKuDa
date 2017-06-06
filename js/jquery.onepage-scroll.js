@@ -86,7 +86,7 @@
             sections = $(settings.sectionContainer);
         total = sections.length,
             status = "off",
-            topPos = $(".navbar").height() + "px",
+            topPos = 0,
             leftPos = 0,
             lastAnimation = 0,
             quietPeriod = 500,
@@ -283,13 +283,13 @@
         el.addClass("onepage-wrapper").css("position", "relative");
         $.each(sections, function (i) {
             $(this).css({
-                //position: "absolute",
+                position: "absolute",
                 top: topPos + "%"
             }).addClass("section").attr("data-index", i + 1);
 
 
             $(this).css({
-                //position: "absolute",
+                position: "absolute",
                 left: ( settings.direction == 'horizontal' )
                     ? leftPos + "%"
                     : 0,

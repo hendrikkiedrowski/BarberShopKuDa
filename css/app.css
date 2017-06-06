@@ -43,6 +43,9 @@ a {
 	text-align: center;
 }
 
+.modal-backdrop {
+	position: relative;
+}
 #bookmodal {
 	font-size: 1.5rem;
 	padding-top: 0.2rem;
@@ -264,11 +267,4 @@ a {
 @include media-breakpoint-only(xl) {
 	column-count: 3;
 }
-}
-.modal {
-	position: absolute;
-}
-
-.modal-backdrop {
-	position: relative;
 }

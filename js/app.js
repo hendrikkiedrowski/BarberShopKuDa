@@ -7,7 +7,7 @@ let _secondpage = $("#secondpage");
 let _animobjekts = $(".anim");
 let _content = $(".content");
 $(document).ready(function () {
-    _content.css("padding-top", navbarheight + 50 + "px");
+    _content.css("padding-top", navbarheight + 10 + "px");
     contact();
     _animobjekts.each(function (index) {
         $(this).css("display", "none")
