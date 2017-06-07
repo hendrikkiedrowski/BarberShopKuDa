@@ -19,7 +19,7 @@ hr {
 
 body {
 	font-family: 'mainfont';
-
+	font-size: 1.2rem;
 }
 
 a {
@@ -259,6 +259,20 @@ a {
 	padding-bottom: 50px;
 }
 
+@media (min-width: 992px) {
+	h1 {
+		font-size: 8vh;
+	}
+
+	h2 {
+		font-size: 6vh;
+	}
+
+	p {
+		font-size: 4vh;
+		margin-top: -1rem;
+	}
+}
 .card-columns {
 
 @include media-breakpoint-only(lg) {
