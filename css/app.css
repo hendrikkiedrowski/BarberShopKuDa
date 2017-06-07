@@ -43,6 +43,19 @@ a {
 	text-align: center;
 }
 
+.modal-dialog {
+	overflow-y: initial !important;
+	margin-top: none;
+	margin-right: none;
+	margin-left: none;
+	margin-bottom: none;
+	max-width: 95vw;
+
+}
+
+.modal-body {
+	overflow-y: auto;
+}
 .modal-backdrop {
 	position: relative;
 }
