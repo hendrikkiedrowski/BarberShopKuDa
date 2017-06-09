@@ -6,6 +6,7 @@ let _firstpage = $("#firstpage");
 let _secondpage = $("#secondpage");
 let _animobjekts = $(".anim");
 let _content = $(".content");
+let _arrowdown = $(".arrow");
 $(document).ready(function () {
     _content.css("padding-top", navbarheight + 10 + "px");
     contact();
@@ -13,8 +14,11 @@ $(document).ready(function () {
         $(this).css("display", "none")
     });
 
-
+    $(".arrowdown").click(function () {
+        $(".main").moveDown();
+    });
 });
+
 $(window).resize(function () {
     contact();
 });
@@ -36,7 +40,12 @@ $(".main").onepage_scroll({
                     el.addClass("animated fadeInRight");
                 }, 800 * i);
 
-            })
+            });
+            _arrowdown.css("display", "none");
+            _arrowdown.css("content", "");
+        }
+        else {
+            _arrowdown.css("display", "block");
         }
     },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
