@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" serverName="Strato-Test" uploadOnCheckin="4ce947d4-a631-4e62-96fd-fb77fcd6d125">
     <serverData>
+      <paths name="1u1 Rowdy">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Strato-Test">
         <serverdata>
           <mappings>

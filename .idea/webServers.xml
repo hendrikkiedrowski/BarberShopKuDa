@@ -10,6 +10,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="1c7a1345-eeca-4da8-bede-06382172f4db" name="1u1 Rowdy" url="http://home573881188.1and1-data.host">
+        <fileTransfer host="home573881188.1and1-data.host" port="22" rootFolder="/KuDamm" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
