@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4ce947d4-a631-4e62-96fd-fb77fcd6d125" name="Strato-Test" url="http://barber.gruentaler-joker.net/">
+        <fileTransfer host="ftp.strato.de" port="21" rootFolder="/Barber/kudamm">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1c7a1345-eeca-4da8-bede-06382172f4db" name="1u1 Rowdy" url="http://home573881188.1and1-data.host">
+        <fileTransfer host="home573881188.1and1-data.host" port="22" rootFolder="/KuDamm" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
