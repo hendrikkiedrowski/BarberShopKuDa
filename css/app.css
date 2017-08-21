@@ -1,303 +1,374 @@
 @font-face {
-	font-family: 'mainfont';
-	src: url('../typography/Corki/TD-Corki-Regular.otf') format('opentype');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
+    font-family: 'mainfont';
+    src: url('../typography/Corki/TD-Corki-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    color: white;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 hr {
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	border: 0;
-	border-top: 1px solid #f5f5f5;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid #f5f5f5;
 }
 
 #headlinepricings {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 body {
-	font-family: 'mainfont';
-	font-size: 1.2rem;
+    font-family: 'mainfont';
+    font-size: 1.2rem;
 }
 
 a {
-	opacity: 1;
+    opacity: 1;
 }
 
 #timify {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	min-height: 100vh;
-	background: url("../images/black-Linen.png") repeat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 100vh;
+    background: url("../images/black-Linen.png") repeat;
 }
 
 #timifymodal {
-	margin-top: -68px;
-	min-height: 75vh;
+    margin-top: -68px;
+    min-height: 75vh;
 }
+
 .navbar {
-	padding-top: 0;
+    padding-top: 0;
 }
 
 #book {
-	font-size: 1.5rem;
-	padding-top: 0.2rem;
-	padding-bottom: 0;
-	color: black;
-	text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0;
+    color: black;
+    text-align: center;
 }
 
 .modal-dialog {
-	overflow-y: initial !important;
-
+    overflow-y: initial !important;
 
 }
 
 #impressum {
-	max-width: 95vw;
+    max-width: 95vw;
 }
 
 .modal-body {
-	overflow-y: auto;
+    overflow-y: auto;
 }
+
 .modal-backdrop {
-	position: relative;
+    position: relative;
 }
+
 #bookmodal {
-	font-size: 1.5rem;
-	padding-top: 0.2rem;
-	padding-bottom: 0;
-	color: white;
-	text-align: center;
+    font-size: 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0;
+    color: white;
+    text-align: center;
 }
 
 #headfootbg {
-	background: url("../images/linen.png");
-	opacity: 0.5;
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
+    background: url("../images/linen.png");
+    opacity: 0.5;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 .bg-faded {
-	background: none;
+    background: none;
 }
 
 .bordernav {
-	z-index: 1030;
-	background-image: url(../images/lin-top.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-	padding-top: 0;
-	color: rgb(255, 255, 255);
-	max-height: 7px;
-	min-height: 5px;
+    z-index: 1030;
+    background-image: url(../images/lin-top.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-top: 0;
+    color: rgb(255, 255, 255);
+    max-height: 7px;
+    min-height: 5px;
 }
 
 #navbar {
-	color: rgb(0, 0, 0);
-	padding-bottom: 0;
-	padding-left: 15px;
-	padding-right: 15px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-	color: #014c8c;
+    color: #014c8c;
 }
 
 .nav-link {
-	cursor: pointer;
-	font-size: 2.3vh;
+    cursor: pointer;
+    font-size: 2.3vh;
 }
 
 .nav-link.active {
-	padding-right: .425em;
-	padding-left: .425em;
-	background-color: rgb(255, 255, 255);
-	border-radius: 5px;
+    padding-right: .425em;
+    padding-left: .425em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #ffffff;
+    color: #ffffff;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-toggler {
-	color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 #contact {
-	padding-top: 1.5rem;
-	text-align: center;
-	color: white;
-	text-shadow: 0 0 2px rgb(0, 0, 0);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 #mobilecontact {
-	color: white;
-	position: absolute;
-	width: 100%;
-	padding-bottom: 1vh;
-	text-shadow: 0 0 2px rgb(0, 0, 0);
+    color: white;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 1vh;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 #contacts {
-	padding-bottom: 1vh;
-	position: absolute;
-	width: 100%;
+    padding-bottom: 1vh;
+    position: absolute;
+    width: 100%;
 }
+
 #mobilehr {
-	margin-left: 2.5rem;
-	margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 #phone {
-	color: white;
+    color: white;
 }
 
 #navlogo {
-	text-align: center;
+    text-align: center;
 }
 
 .centerimage {
-	max-width: 80%;
-	max-height: 45vh;
-	height: auto;
+    max-width: 80%;
+    max-height: 45vh;
+    height: auto;
 }
 
 #social {
-	font-size: 1.5em;
-	margin-bottom: -10rem;
+    font-size: 1.5em;
+    margin-bottom: -10rem;
 }
 
 .footer {
-	padding: 0.5rem;
-	padding-top: 0;
-	padding-bottom: 0;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	z-index: 101;
-	font-size: 1.2em;
+    padding: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+    font-size: 1.2em;
 
 }
 
 .card {
-	background-image: url(../images/black-Linen.png);
-	text-align: center;
-	-webkit-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
-	-moz-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
-	box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
-	opacity: 0.9;
-	color: rgb(255, 255, 255);
-	border-radius: 10px;
-	border: none;
+    background-image: url(../images/black-Linen.png);
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
+    -moz-box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
+    box-shadow: 10px 10px 50px 9px rgba(0, 0, 0, 0.81);
+    opacity: 0.9;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
 }
 
 .card-header {
-	background: url(../images/linen.png);
-	color: rgb(0, 0, 0);
-	border: none;
+    background: url(../images/linen.png);
+    color: rgb(0, 0, 0);
+    border: none;
 }
 
 @media (min-width: 576px) {
-	#shopmodal {
-		max-width: 80%;
-	}
+    #shopmodal {
+        max-width: 80%;
+    }
 }
 
 .card-header:first-child {
-	border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .card-text {
-	text-align: left;
+    text-align: left;
 }
 
 .btn {
-	color: rgb(0, 0, 0);
-	border-radius: 0 0 10px 10px;
-	border: none;
-	background: url(../images/linen.png);
-	font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+    border-radius: 0 0 10px 10px;
+    border: none;
+    background: url(../images/linen.png);
+    font-size: 1.25rem;
 }
 
 .btn:hover {
-	border: none;
+    border: none;
 }
 
 .btn-primary {
-	background-color: rgb(255, 255, 255);
-	border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
 }
 
 .btn-primary:hover {
-	/*background-color: rgb(34, 181, 53);
+    /*background-color: rgb(34, 181, 53);
   border-color: rgb(34, 181, 53);*/
-	opacity: 0.85;
-	color: rgb(34, 181, 53);
+    opacity: 0.85;
+    color: rgb(34, 181, 53);
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 65px;
+}
+
+@media (orientation: landscape) {
+    .profilepicture {
+        max-height: 45vh;
+    }
+
+    .bullitlist {
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (orientation: portrait) {
+    .profilepicture {
+        max-height: 35vh;
+        position: relative;
+        left: 5vw;
+    }
+
+    .bullitlist {
+        position: absolute;
+        top: 40vh;
+        left: -25vw;
+    }
+}
+
+.activebarber {
+    display: block !important;
+}
+
+#Rami {
+    display: none;
+}
+
+#Max {
+    display: none;
+}
+
+#contactcanvas {
+    padding-top: 1vh;
+    min-height: 40vh;
+    min-width: 100%;
+    color: #ffffff;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+#headingmenu {
+    background-image: url(../images/black-Linen.png);
+    opacity: 0.9;
+    padding-top: 0.5rem;
+    border-radius: 5px 5px 5px 5px;
 }
 
 #Preisliste {
-	padding-top: 2vh;
-	color: #ffffff;
-	text-shadow: 0 0 2px rgb(0, 0, 0);
+    padding-top: 2vh;
+    color: #ffffff;
+    text-shadow: 0 0 2px rgb(0, 0, 0);
 
 }
 
 #firstpage {
-	background: url("../images/firstpagesm.jpg");
-	background-position: center;
-	background-size: cover;
+    background: url("../images/firstpagesm.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #secondpage {
-	background: url("../images/secondpage2_sm.jpg");
-	background-position: center;
-	background-size: cover;
+    background: url("../images/secondpage2_sm.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#thirdpage {
+    background: url("../images/thirdpage.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .card-footer {
-	border: none;
-	background: url(../images/linen.png);
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+    border: none;
+    background: url(../images/linen.png);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .card-footer:last-child {
-	border-radius: 0 0 10px 10px;
-	padding: 0 0 0 0;
+    border-radius: 0 0 10px 10px;
+    padding: 0 0 0 0;
 }
 
 .card-img-top {
-	max-height: 25vh;
+    max-height: 25vh;
 }
 
 .card-deck .card {
-	padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 @media (min-width: 992px) {
-	h1 {
-		font-size: 8vh;
-	}
+    h1 {
+        font-size: 8vh;
+    }
 
-	h2 {
-		font-size: 6vh;
-	}
+    h2 {
+        font-size: 6vh;
+    }
 
-	p {
-		font-size: 4vh;
-		margin-top: -1rem;
-	}
+    p {
+        font-size: 4vh;
+        margin-top: -1rem;
+    }
 }
+
 .card-columns {
 
 @include media-breakpoint-only(lg) {
-	column-count: 3;
+    column-count: 3;
 }
 @include media-breakpoint-only(xl) {
-	column-count: 3;
+    column-count: 3;
 }
 }
