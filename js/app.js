@@ -4,6 +4,7 @@ let _mobilecontact = $("#mobilecontact");
 let _contacts = $("#contacts");
 let _firstpage = $("#firstpage");
 let _secondpage = $("#secondpage");
+let _thirdpage = $("#thirdpage");
 let _animobjekts = $(".anim");
 let _content = $(".content");
 let _arrowdown = $(".arrow");
@@ -44,6 +45,10 @@ $(".main").onepage_scroll({
             _arrowdown.css("display", "none");
             _arrowdown.css("content", "");
         }
+        else if (_thirdpage.hasClass("active") == true) {
+            _arrowdown.css("display", "none");
+            _arrowdown.css("content", "");
+        }
         else {
             _arrowdown.css("display", "block");
         }
@@ -67,4 +72,12 @@ function contact() {
     _contacts.css("bottom", footerheight + "px");
     _mobilecontact.css("bottom", footerheight + "px");
 
+}
+
+function cyclebarber(name) {
+    let _activebarbers = $("#contactcanvas").children();
+    _activebarbers.each(function (index) {
+        $(".activebarber").removeClass("activebarber")
+    });
+    $(name).addClass("activebarber");
 }
