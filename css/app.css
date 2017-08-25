@@ -278,6 +278,7 @@ p {
 
 .barbermenuitem:focus {
     text-decoration: none;
+    border-bottom-color: #c4161c;
 }
 
 .activemenuitem {
