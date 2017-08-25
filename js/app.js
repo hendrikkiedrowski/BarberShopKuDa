@@ -75,9 +75,13 @@ function contact() {
 }
 
 function cyclebarber(name) {
-    let _activebarbers = $("#contactcanvas").children();
-    _activebarbers.each(function (index) {
-        $(".activebarber").removeClass("activebarber")
-    });
-    $(name).addClass("activebarber");
+    let _activebarber = $(name);
+    let _activebarbersmenu = $(name + "menu");
+
+    $(".activemenuitem").removeClass("activemenuitem");
+    $(".activebarber").removeClass("activebarber");
+
+    _activebarber.addClass("activebarber");
+    _activebarbersmenu.addClass("activemenuitem");
+
 }

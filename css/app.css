@@ -31,6 +31,10 @@ a {
     opacity: 1;
 }
 
+p {
+    font-size: 1rem;
+}
+
 #timify {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -246,17 +250,58 @@ a {
     color: rgb(34, 181, 53);
 }
 
-.list-inline-item:not(:last-child) {
-    margin-right: 65px;
+.barbermenu:not(:last-child) {
+    margin-right: 6vw;
 }
 
+.barbermenuitem {
+    color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-radius: 5px;
+}
+
+.barbermenuitem:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #004a8e;
+    border-radius: 5px;
+}
+
+.barbermenuitem:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.barbermenuitem:focus {
+    text-decoration: none;
+}
+
+.activemenuitem {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #c4161c;
+    border-radius: 5px;
+}
+
+.profilepicture_desktop {
+    min-height: 35vh;
+}
+
+.bullitlist {
+    color: #ffffff;
+}
 @media (orientation: landscape) {
     .profilepicture {
         max-height: 45vh;
     }
 
     .bullitlist {
-        margin-top: 16px;
+        font-size: 5vh;
+        margin-top: 3vh;
         margin-bottom: 0px;
     }
 }
@@ -264,14 +309,11 @@ a {
 @media (orientation: portrait) {
     .profilepicture {
         max-height: 35vh;
-        position: relative;
-        left: 5vw;
+
     }
 
     .bullitlist {
-        position: absolute;
-        top: 40vh;
-        left: -25vw;
+
     }
 }
 
@@ -279,11 +321,7 @@ a {
     display: block !important;
 }
 
-#Rami {
-    display: none;
-}
-
-#Max {
+.Rami, .Max, .Leo {
     display: none;
 }
 
@@ -322,7 +360,7 @@ a {
 }
 
 #thirdpage {
-    background: url("../images/thirdpage.jpg");
+
     background-position: center;
     background-size: cover;
 }

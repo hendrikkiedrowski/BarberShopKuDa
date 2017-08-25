@@ -200,26 +200,35 @@
                     <div class="content">
 
                         <div class="row">
-                            <div class="offset-xs-1 col-xs-10 offset-md-4 col-md-4 text-xs-center">
+                            <div class="offset-xs-2 col-xs-8 offset-md-4 col-md-4 text-xs-center">
                                 <ul class="list-inline" id="headingmenu">
-                                    <li class="list-inline-item"><h3><a href="#" onclick="cyclebarber('#Rami')">Rami</a>
+                                    <li class="list-inline-item barbermenu"><h3><a href="#"
+                                                                                   class="barbermenuitem Ramimenu activemenuitem"
+                                                                                   id="Ramimenu"
+                                                                                   onclick="cyclebarber('.Rami')">Rami</a>
                                     </h3></li>
-                                    <li class="list-inline-item"><h3><a href="#" onclick="cyclebarber('#Max')">Max</a>
+                                    <li class="list-inline-item barbermenu"><h3><a href="#"
+                                                                                   class="barbermenuitem Maxmenu"
+                                                                                   id="Maxmenu"
+                                                                                   onclick="cyclebarber('.Max')">Max</a>
                                     </h3></li>
-                                    <li class="list-inline-item"><h3><a href="#" onclick="cyclebarber('#Rami')">Rami</a>
+                                    <li class="list-inline-item barbermenu"><h3><a href="#"
+                                                                                   class="barbermenuitem Leomenu"
+                                                                                   id="Leomenu"
+                                                                                   onclick="cyclebarber('.Leo')">Leo</a>
                                     </h3></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="row" id="contactcanvas">
-                            <div class="offset-xs-1 col-xs-10 activebarber" id="Rami">
+                        <div class="row hidden-sm-down" id="contactcanvas">
+                            <div class="offset-md-1 col-md-10 activebarber Rami">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <img src="images/rami.png" alt="Rami" class="profilepicture">
+                                    <div class="col-xs-5">
+                                        <img src="images/ramicolour.png" alt="Rami" class="profilepicture_desktop">
                                     </div>
-                                    <div class="col-xs-8">
+                                    <div class="col-xs-7">
                                         <ul class="bullitlist">
-                                            <li>Unser ethnisch gemischter Barbier aus Dänemark</li>
+                                            <li>Unser ethnisch gemischter Barbier aus Daenemark</li>
                                             <li>Mit einer langjaehrigen Berufserfahrung</li>
                                             <li>Ein "Old-School" inspirierter Perfektionist</li>
                                             <li>Mit einem kreativen Arbeitsstil</li>
@@ -227,17 +236,81 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="offset-xs-1 col-xs-10" id="Max">
+                            <div class="offset-md-1 col-md-10 Max">
                                 <div class="row">
-                                    <div class="col-xs-4">
-                                        <img src="images/max.png" alt="Max" class="profilepicture">
+                                    <div class="col-xs-5">
+                                        <img src="images/maxcolour.png" alt="Max" class="profilepicture_desktop">
                                     </div>
-                                    <div class="col-xs-8">
+                                    <div class="col-xs-7">
                                         <ul class="bullitlist">
                                             <li>Unser Barbier aus Russland</li>
                                             <li>Ein wahrer Perfektionist</li>
                                             <li>Saubere und praezise Schnitt-Technik</li>
                                             <li>Studierte die Barbier-Kunst in London</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-md-1 col-md-10 Leo">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <img src="images/leocolour.png" alt="Leo" class="profilepicture_desktop">
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <ul class="bullitlist">
+                                            <li>Unser langerwarteter Barbier aus dem Fernen Osten</li>
+                                            <li>ein hervorragender Meister der Barbier-Kunst</li>
+                                            <li>ein einzigartiges Sprachtalent, der Russisch, Ukrainisch, Vietnamesisch
+                                                und Englisch spricht
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row hidden-md-up" id="mobilecontactcanvas">
+                            <div class="col-xs-12 col-md-9 activebarber Rami">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 text-xs-center">
+                                        <img src="images/ramicolour.png" alt="Rami" class="profilepicture">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <ul class="bullitlist">
+                                            <li>Unser ethnisch gemischter Barbier aus Daenemark</li>
+                                            <li>Mit einer langjaehrigen Berufserfahrung</li>
+                                            <li>Ein "Old-School" inspirierter Perfektionist</li>
+                                            <li>Mit einem kreativen Arbeitsstil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 Max">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 text-xs-center">
+                                        <img src="images/maxcolour.png" alt="Max" class="profilepicture">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <ul class="bullitlist">
+                                            <li>Unser Barbier aus Russland</li>
+                                            <li>Ein wahrer Perfektionist</li>
+                                            <li>Saubere und praezise Schnitt-Technik</li>
+                                            <li>Studierte die Barbier-Kunst in London</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 Leo">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 text-xs-center">
+                                        <img src="images/leocolour.png" alt="Leo" class="profilepicture">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <ul class="bullitlist">
+                                            <li>Unser langerwarteter Barbier aus dem Fernen Osten</li>
+                                            <li>ein hervorragender Meister der Barbier-Kunst</li>
+                                            <li>ein einzigartiges Sprachtalent, der Russisch, <br> Ukrainisch,
+                                                Vietnamesisch und Englisch spricht
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
