@@ -289,7 +289,8 @@ p {
 }
 
 .profilepicture_desktop {
-    min-height: 35vh;
+
+	min-height: 35vh;
 }
 
 .bullitlist {
@@ -322,7 +323,7 @@ p {
     display: block !important;
 }
 
-.Rami, .Max, .Leo {
+.Rami, .Max {
     display: none;
 }
 
@@ -335,7 +336,7 @@ p {
 }
 
 #headingmenu {
-    background-image: url(../images/black-Linen.png);
+	background-image: url("../images/black-Linen.png");
     opacity: 0.9;
     padding-top: 0.5rem;
     border-radius: 5px 5px 5px 5px;
@@ -361,7 +362,7 @@ p {
 }
 
 #thirdpage {
-
+	background: url("../images/thirdpage.jpg");
     background-position: center;
     background-size: cover;
 }
