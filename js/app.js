@@ -5,6 +5,7 @@ let _contacts = $("#contacts");
 let _firstpage = $("#firstpage");
 let _secondpage = $("#secondpage");
 let _thirdpage = $("#thirdpage");
+let _fourthpage = $("#fourthpage");
 let _animobjekts = $(".anim");
 let _content = $(".content");
 let _arrowdown = $(".arrow");
@@ -34,11 +35,11 @@ $(".main").onepage_scroll({
     },  // This option accepts a callback function. The function will be called before the page moves.
     afterMove: function (index) {
         if (_secondpage.hasClass("active") == true) {
-            _animobjekts.each(function (i, el) {
-                var el = $(this);
+            _animobjekts.each(function (i) {
+                var elem = $(this);
                 setTimeout(function () {
-                    el.css("display", "block");
-                    el.addClass("animated fadeInRight");
+                    elem.css("display", "block");
+                    elem.addClass("animated fadeInRight");
                 }, 800 * i);
 
             });
@@ -47,6 +48,10 @@ $(".main").onepage_scroll({
         }
         else if (_thirdpage.hasClass("active") == true) {
             _arrowdown.css("display", "none");
+            _arrowdown.css("content", "");
+        }
+        else if (_fourthpage.hasClass("active") == true){
+            _arrowdown.css("display","none");
             _arrowdown.css("content", "");
         }
         else {
