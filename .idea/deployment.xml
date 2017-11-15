@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Strato-Test" uploadOnCheckin="4ce947d4-a631-4e62-96fd-fb77fcd6d125">
+  <component name="PublishConfigData" serverName="Strato-Test" uploadOnCheckin="1c7a1345-eeca-4da8-bede-06382172f4db">
     <serverData>
       <paths name="1u1 Rowdy">
         <serverdata>
@@ -17,6 +17,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Strato-Test" />
+    <option name="myUploadOnCheckinName" value="1u1 Rowdy" />
   </component>
 </project>

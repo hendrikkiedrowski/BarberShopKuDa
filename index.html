@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <script src="js/fontawesome.js"></script>
+
     <title>ROWDY - Barbers</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
@@ -26,17 +26,26 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/arrowdown.css">
+    <script src="js/fontawesome.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/widget.js"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/stackblur.js"></script>
+
+    <script src="js/jquery.translate.js"></script>
 
 
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
+<body data-spy="scroll" data-target="#navbar" onload="translate()">
 
 <div class="container-fluid" id="nav">
     <nav id="navbar" class="navbar navbar-light navbar-fixed-top">
         <div class="row" id="headfootbg">
             <div class="col-xs-6 text-xs-left">
-                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="book">Termin Buchen
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="book"><span class="trn">Termin Buchen</span>
                 </button>
             </div>
             <div class="col-xs-6 text-xs-right" id="social">
@@ -238,10 +247,10 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <ul class="bullitlist">
-                                            <li>Unser ethnisch gemischter Barbier aus Daenemark</li>
-                                            <li>Mit einer langjaehrigen Berufserfahrung</li>
-                                            <li>Ein "Old-School" inspirierter Perfektionist</li>
-                                            <li>Mit einem kreativen Arbeitsstil</li>
+                                            <li class="trn">Unser ethnisch gemischter Barbier aus Daenemark</li>
+                                            <li class="trn">Mit einer langjaehrigen Berufserfahrung</li>
+                                            <li class="trn">Ein "Old-School" inspirierter Perfektionist</li>
+                                            <li class="trn">Mit einem kreativen Arbeitsstil</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -253,10 +262,10 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <ul class="bullitlist">
-                                            <li>Unser Barbier aus Russland</li>
-                                            <li>Ein wahrer Perfektionist</li>
-                                            <li>Saubere und praezise Schnitt-Technik</li>
-                                            <li>Studierte die Barbier-Kunst in London</li>
+                                            <li class="trn">Unser Barbier aus Litauen</li>
+                                            <li class="trn">Ein wahrer Perfektionist</li>
+                                            <li class="trn">Saubere und praezise Schnitt-Technik</li>
+                                            <li class="trn">Studierte die Barbier-Kunst in London</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -268,9 +277,9 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <ul class="bullitlist">
-                                            <li>Unser gewandter Barbier aus England</li>
-                                            <li>Fade-Spezialist für alle Haartypen</li>
-                                            <li>Ein verfechter der Praezision</li>
+                                            <li class="trn">Unser gewandter Barbier aus England</li>
+                                            <li class="trn">Fade-Spezialist für alle Haartypen</li>
+                                            <li class="trn">Ein verfechter der Praezision</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -284,10 +293,10 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
                                         <ul class="bullitlist">
-                                            <li>Unser ethnisch gemischter Barbier aus Daenemark</li>
-                                            <li>Mit einer langjaehrigen Berufserfahrung</li>
-                                            <li>Ein "Old-School" inspirierter Perfektionist</li>
-                                            <li>Mit einem kreativen Arbeitsstil</li>
+                                            <li class="trn">Unser ethnisch gemischter Barbier aus Daenemark</li>
+                                            <li class="trn">Mit einer langjaehrigen Berufserfahrung</li>
+                                            <li class="trn">Ein "Old-School" inspirierter Perfektionist</li>
+                                            <li class="trn">Mit einem kreativen Arbeitsstil</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -299,10 +308,10 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
                                         <ul class="bullitlist">
-                                            <li>Unser Barbier aus Litauen</li>
-                                            <li>Ein wahrer Perfektionist</li>
-                                            <li>Saubere und praezise Schnitt-Technik</li>
-                                            <li>Studierte die Barbier-Kunst in London</li>
+                                            <li class="trn">Unser Barbier aus Litauen</li>
+                                            <li class="trn">Ein wahrer Perfektionist</li>
+                                            <li class="trn">Saubere und praezise Schnitt-Technik</li>
+                                            <li class="trn">Studierte die Barbier-Kunst in London</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -314,9 +323,9 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-8">
                                         <ul class="bullitlist">
-                                            <li>Unser gewandter Barbier aus England</li>
-                                            <li>Fade-Spezialist für alle Haartypen</li>
-                                            <li>Ein verfechter der Praezision</li>
+                                            <li class="trn">Unser gewandter Barbier aus England</li>
+                                            <li class="trn">Fade-Spezialist für alle Haartypen</li>
+                                            <li class="trn">Ein verfechter der Praezision</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -327,9 +336,9 @@
             </div>
         </div>
     </section>
-    <section>
-
-    </section>
+    <!-- <section id="fourthpage">
+         <-!   Instagram   !->
+     </section> -->
 </div>
 <footer class="footer">
     <div class="row">
@@ -531,13 +540,8 @@
         </div>
     </div>
 </div>
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/tether.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/widget.js"></script>
-<script src="js/jquery.onepage-scroll.js"></script>
-<script src="js/stackblur.js"></script>
 <script src="js/app.js"></script>
+<script src="js/dict.js"></script>
 </body>
 
 </html>
