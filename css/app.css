@@ -59,6 +59,10 @@ p {
     text-align: center;
 }
 
+.dropdown-menu {
+    opacity: 1;
+}
+
 .modal-dialog {
     overflow-y: initial !important;
 
@@ -85,8 +89,17 @@ p {
 }
 
 #headfootbg {
-    background: url("../images/linen.png");
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+#headfootbg1 {
+    background: transparent url("../images/linen.png");
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    -khtml-opacity: 0.4;
+    opacity: 0.4;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
@@ -228,9 +241,9 @@ p {
 
 .btn {
     color: rgb(0, 0, 0);
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     border: none;
-    background: url(../images/linen.png);
+    background-color: rgba(255, 255, 255, 0.4);
     font-size: 1.25rem;
 }
 
@@ -239,19 +252,22 @@ p {
 }
 
 .btn-primary {
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 .btn-primary:hover {
-    /*background-color: rgb(34, 181, 53);
-  border-color: rgb(34, 181, 53);*/
-    opacity: 0.85;
-    color: rgb(34, 181, 53);
+    background-color: rgba(0, 74, 142, 0.3);
+    border-color: rgba(0, 74, 142, 0.3);
+
 }
 
 .barbermenu:not(:last-child) {
     margin-right: 6vw;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0 10px 10px 0;
 }
 
 .barbermenuitem {
@@ -267,7 +283,7 @@ p {
     text-decoration: none;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-    border-bottom-color: #004a8e;
+    border-bottom-color: rgba(0, 74, 142, 0.3);
     border-radius: 5px;
 }
 
@@ -374,7 +390,6 @@ p {
     bottom: 0;
     width: 100%;
 }
-
 .card-footer:last-child {
     border-radius: 0 0 10px 10px;
     padding: 0 0 0 0;

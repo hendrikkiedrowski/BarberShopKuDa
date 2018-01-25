@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="4ce947d4-a631-4e62-96fd-fb77fcd6d125" name="Strato-Test" url="http://barber.gruentaler-joker.net/">
+      <webServer id="4ce947d4-a631-4e62-96fd-fb77fcd6d125" name="Strato-Test" url="">
         <fileTransfer host="ftp.strato.de" port="21" rootFolder="/Barber">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />

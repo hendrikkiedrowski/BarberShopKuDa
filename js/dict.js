@@ -29,11 +29,20 @@ var dict = {
     "Unser gewandter Barbier aus England": {
         en: "Our adroit barber from England"
     },
-    "Fade-Spezialist für alle Haartypen": {
+    "Fade-Spezialist fuer alle Haartypen": {
         en: "Fade specialist in all hair types"
     },
     "Ein verfechter der Praezision": {
         en: "A stickler for accuracy"
+    },
+    "Sprache": {
+        en: "Language"
+    },
+    " Deutsch": {
+        en: " German"
+    },
+    " Englisch": {
+        en: " English"
     }
 };
 var translator;
@@ -44,4 +53,14 @@ function translate() {
         translator = $('body').translate({lang: "en", t: dict}); //use English
     }
 
+}
+
+function translateEN() {
+    translator = $('body').translate({lang: "en", t: dict});
+    translator = $('footer').translate({lang: "en", t: dict});
+}
+
+function translateDE() {
+    translator = $('body').translate({lang: "de", t: dict});
+    translator = $('footer').translate({lang: "de", t: dict});
 }
