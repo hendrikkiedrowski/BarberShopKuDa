@@ -418,6 +418,13 @@ p {
     }
 }
 
+.youtube iframe {
+
+	width: 100%;
+	height: 80%;
+
+}
+
 .card-columns {
 
 @include media-breakpoint-only(lg) {

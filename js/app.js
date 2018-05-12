@@ -9,9 +9,11 @@ let _fourthpage = $("#fourthpage");
 let _animobjekts = $(".anim");
 let _content = $(".content");
 let _arrowdown = $(".arrow");
-$(document).ready(function () {
+
+window.onload = function () {
     _content.css("padding-top", navbarheight + 10 + "px");
     contact();
+    video();
     _animobjekts.each(function (index) {
         $(this).css("display", "none")
     });
@@ -19,10 +21,11 @@ $(document).ready(function () {
     $(".arrowdown").click(function () {
         $(".main").moveDown();
     });
-});
+};
 
 $(window).resize(function () {
     contact();
+    video();
 });
 $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -65,16 +68,8 @@ $(".main").onepage_scroll({
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
-$.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function () {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-});
 function contact() {
-    _contacts.css("bottom", footerheight + "px");
+    _contacts[0].style.bottom = footerheight + "px";
     _mobilecontact.css("bottom", footerheight + "px");
 
 }
@@ -88,5 +83,14 @@ function cyclebarber(name) {
 
     _activebarber.addClass("activebarber");
     _activebarbersmenu.addClass("activemenuitem");
+
+}
+
+function video() {
+    let video = $(".youtube iframe")[0];
+    video.style.position = "absolute";
+    video.style.top = navbarheight + "px";
+    video.style.left = "0";
+    video.style.height = ($("#fourthpage").height() - footerheight - navbarheight) + "px";
 
 }
