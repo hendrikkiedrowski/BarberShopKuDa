@@ -43,6 +43,21 @@ var dict = {
     },
     " Englisch": {
         en: " English"
+    },
+    "Unser Barbier aus Ungarn": {
+        en: "Our barber from Hungary"
+    },
+    "Ein Verehrer von Haar und Bart": {
+        en: "Hair and beard enthusiast"
+    },
+    "Ausgebildet sowohl im klassischen, als auch im modernen Haarstil": {
+        en: "Skilled in both classic and modern hairstyles"
+    },
+    "Bart-Experte": {
+        en: "Beard specialist"
+    },
+    "Stets kreativ": {
+        en: "Always creative"
     }
 };
 var translator;
