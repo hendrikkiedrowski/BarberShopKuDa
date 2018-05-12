@@ -15,7 +15,7 @@ var dict = {
         en: "with a creative workflow"
     },
     "Unser Barbier aus Litauen": {
-        en: "Our Barber from Latvia"
+        en: "Our Barber from Lithuania"
     },
     "Ein wahrer Perfektionist": {
         en: "A true perfectionist"
